@@ -1,0 +1,332 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify the right count of values appear on the screen",
+        "description": "",
+        "id": "resolving-problem;verify-the-right-count-of-values-appear-on-the-screen",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 116046716,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Table with labels and values",
+            "match": {
+              "location": "MyStepdefs.tableWithLabelsAndValues(DataModel\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "label",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 1",
+                  "$122,365.24"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 2",
+                  "$599.00"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 3",
+                  "$850,139.99"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 4",
+                  "$23,329.50"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 5",
+                  "$566.27"
+                ]
+              },
+              {
+                "cells": [
+                  "Total Balance",
+                  "$1,000,000.00"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 44438743,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify that the right count of values appear on the screen",
+            "match": {
+              "location": "MyStepdefs.iVerifyThatTheRightCountOfValuesAppearOnTheScreen()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Verify the values on the screen are greater than 0",
+        "description": "",
+        "id": "resolving-problem;verify-the-values-on-the-screen-are-greater-than-0",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1146445,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Table with labels and values",
+            "match": {
+              "location": "MyStepdefs.tableWithLabelsAndValues(DataModel\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "label",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 1",
+                  "$122,365.24"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 2",
+                  "$599.00"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 3",
+                  "$850,139.99"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 4",
+                  "$23,329.50"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 5",
+                  "$566.27"
+                ]
+              },
+              {
+                "cells": [
+                  "Total Balance",
+                  "$1,000,000.00"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1292924,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I verify that the values on the screen are greater than 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 56
+                }
+              ],
+              "location": "MyStepdefs.iVerifyThatTheValuesOnTheScreenAreGreaterThan(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Verify the total balance is correct based on the values listed on the screen",
+        "description": "",
+        "id": "resolving-problem;verify-the-total-balance-is-correct-based-on-the-values-listed-on-the-screen",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1545852,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Table with labels and values",
+            "match": {
+              "location": "MyStepdefs.tableWithLabelsAndValues(DataModel\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "label",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 1",
+                  "$122,365.24"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 2",
+                  "$599.00"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 3",
+                  "$850,139.99"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 4",
+                  "$23,329.50"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 5",
+                  "$566.27"
+                ]
+              },
+              {
+                "cells": [
+                  "Total Balance",
+                  "$1,000,000.00"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Summary of all values ($997000.0) doesn\u0027t match with expected Total Balance. expected [1000000.0] but found [997000.0]\n\tat org.testng.Assert.fail(Assert.java:96)\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\n\tat org.testng.Assert.assertEquals(Assert.java:118)\n\tat steps.MyStepdefs.iVerifyThatTheTotalBalanceIsCorrectBasedOnTheValuesListedOnTheScreen(MyStepdefs.java:80)\n\tat ✽.I verify that the total balance is correct based on the values listed on the screen(src/test/resources/problem.feature:35)\n",
+              "duration": 2457815,
+              "status": "failed"
+            },
+            "line": 35,
+            "name": "I verify that the total balance is correct based on the values listed on the screen",
+            "match": {
+              "location": "MyStepdefs.iVerifyThatTheTotalBalanceIsCorrectBasedOnTheValuesListedOnTheScreen()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "Verify the values are formatted as currencies",
+        "description": "",
+        "id": "resolving-problem;verify-the-values-are-formatted-as-currencies",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1132789,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Table with labels and values",
+            "match": {
+              "location": "MyStepdefs.tableWithLabelsAndValues(DataModel\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "label",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 1",
+                  "$122,365.24"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 2",
+                  "$599.00"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 3",
+                  "$850,139.99"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 4",
+                  "$23,329.50"
+                ]
+              },
+              {
+                "cells": [
+                  "Value 5",
+                  "$566.27"
+                ]
+              },
+              {
+                "cells": [
+                  "Total Balance",
+                  "$1,000,000.00"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1952745,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I verify that the values are formatted as currencies",
+            "match": {
+              "location": "MyStepdefs.iVerifyThatTheValuesAreFormattedAsCurrencies()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Resolving Problem",
+    "description": "  Utilizing Java, Cucumber and the Page Object Model",
+    "id": "resolving-problem",
+    "keyword": "Feature",
+    "uri": "src/test/resources/problem.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">Table with labels and values (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify that the right count of values appear on the screen (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Table with labels and values (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify that the values on the screen are greater than 0 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Table with labels and values (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify that the total balance is correct based on the values listed on the screen (FAILED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Table with labels and values (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I verify that the values are formatted as currencies (PASSED : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="592" started-at="2019-10-02T07:00:55Z" finished-at="2019-10-02T07:00:56Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@7f63425a]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="592" started-at="2019-10-02T07:00:55Z" finished-at="2019-10-02T07:00:56Z">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@7f63425a]" name="setUpClass" is-config="true" duration-ms="249" started-at="2019-10-02T07:00:55Z" finished-at="2019-10-02T07:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@7f63425a]" name="runScenario" duration-ms="226" started-at="2019-10-02T07:00:56Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-10-02T07:00:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the right count of values appear on the screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Resolving Problem"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">Table with labels and values (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify that the right count of values appear on the screen (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@7f63425a]" name="runScenario" duration-ms="5" started-at="2019-10-02T07:00:56Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-10-02T07:00:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the values on the screen are greater than 0"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Resolving Problem"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">Table with labels and values (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify that the values on the screen are greater than 0 (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@7f63425a]" name="runScenario" duration-ms="7" started-at="2019-10-02T07:00:56Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-10-02T07:00:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the total balance is correct based on the values listed on the screen"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Resolving Problem"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Summary of all values ($997000.0) doesn't match with expected Total Balance. expected [1000000.0] but found [997000.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Summary of all values ($997000.0) doesn't match with expected Total Balance. expected [1000000.0] but found [997000.0]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at steps.MyStepdefs.iVerifyThatTheTotalBalanceIsCorrectBasedOnTheValuesListedOnTheScreen(MyStepdefs.java:80)
+at ✽.I verify that the total balance is correct based on the values listed on the screen(src/test/resources/problem.feature:35)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">Table with labels and values (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify that the total balance is correct based on the values listed on the screen (FAILED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@7f63425a]" name="runScenario" duration-ms="5" started-at="2019-10-02T07:00:56Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-10-02T07:00:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the values are formatted as currencies"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Resolving Problem"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">Table with labels and values (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I verify that the values are formatted as currencies (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@7f63425a]" name="tearDownClass" is-config="true" duration-ms="43" started-at="2019-10-02T07:00:56Z" finished-at="2019-10-02T07:00:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

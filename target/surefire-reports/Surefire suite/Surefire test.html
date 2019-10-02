@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 02 03:00:55 EDT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (592 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the total balance is correct based on the values listed on the screen", "Resolving Problem"<br/>
+<a href="#Output-1000966072" onClick='toggleBox("Output-1000966072", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1000966072" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1000966072">
+<div "result">Table with labels and values (PASSED : 0s)</div><br/>
+<div "result">I verify that the total balance is correct based on the values listed on the screen (FAILED : 0s)</div><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Summary of all values ($997000.0) doesn&apos;t match with expected Total Balance. expected [1000000.0] but found [997000.0]
+	at steps.MyStepdefs.iVerifyThatTheTotalBalanceIsCorrectBasedOnTheValuesListedOnTheScreen(MyStepdefs.java:80)
+	at ✽.I verify that the total balance is correct based on the values listed on the screen(src/test/resources/problem.feature:35)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1000966072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1000966072'><pre>java.lang.AssertionError: Summary of all values ($997000.0) doesn&apos;t match with expected Total Balance. expected [1000000.0] but found [997000.0]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at steps.MyStepdefs.iVerifyThatTheTotalBalanceIsCorrectBasedOnTheValuesListedOnTheScreen(MyStepdefs.java:80)
+	at ✽.I verify that the total balance is correct based on the values listed on the screen(src/test/resources/problem.feature:35)
+</pre></div></td>
+<td>0</td>
+<td>runner.TestRunner@7f63425a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the right count of values appear on the screen", "Resolving Problem"<br/>
+<a href="#Output-806511723" onClick='toggleBox("Output-806511723", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-806511723" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-806511723">
+<div "result">Table with labels and values (PASSED : 0s)</div><br/>
+<div "result">I verify that the right count of values appear on the screen (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7f63425a</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the values on the screen are greater than 0", "Resolving Problem"<br/>
+<a href="#Output-352598575" onClick='toggleBox("Output-352598575", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-352598575" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-352598575">
+<div "result">Table with labels and values (PASSED : 0s)</div><br/>
+<div "result">I verify that the values on the screen are greater than 0 (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7f63425a</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the values are formatted as currencies", "Resolving Problem"<br/>
+<a href="#Output-1896622931" onClick='toggleBox("Output-1896622931", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1896622931" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1896622931">
+<div "result">Table with labels and values (PASSED : 0s)</div><br/>
+<div "result">I verify that the values are formatted as currencies (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@7f63425a</td></tr>
+</table><p>
+</body>
+</html>

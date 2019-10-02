@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.855 sec <<< FAILURE! - in runner.TestRunner
+runScenario(runner.TestRunner)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.AssertionError: Summary of all values ($997000.0) doesn't match with expected Total Balance. expected [1000000.0] but found [997000.0]
+
